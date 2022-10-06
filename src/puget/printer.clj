@@ -108,31 +108,30 @@
   "Default options to use when constructing new printers."
   {:width 80
    :sort-keys 80
-   :map-delimiter ","
+   :map-delimiter ""
    :map-coll-separator " "
    :namespace-maps false
    :print-fallback :pretty
-   :print-color false
+   :print-color true
    :color-markup :ansi
    :color-scheme
    {;; syntax elements
-    :delimiter [:bold :red]
+    :delimiter [:bold :white]
     :tag       [:red]
 
     ;; primitive values
-    :nil       [:bold :black]
-    :boolean   [:green]
-    :number    [:cyan]
-    :string    [:bold :magenta]
+    :nil       [:bold :cyan]
+    :boolean   [:cyan]
+    :number    [:yellow]
+    :string    [:bold :yellow]
     :character [:bold :magenta]
-    :keyword   [:bold :yellow]
+    :keyword   [:bold :magenta]
     :symbol    nil
 
     ;; special types
-    :function-symbol [:bold :blue]
-    :class-delimiter [:blue]
-    :class-name      [:bold :blue]}})
-
+    :function-symbol [:bold :cyan]
+    :class-delimiter [:cyan]
+    :class-name      [:bold :cyan]}})
 
 (defn merge-options
   "Merges maps of printer options, taking care to combine the color scheme

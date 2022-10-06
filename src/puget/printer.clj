@@ -116,22 +116,22 @@
    :color-markup :ansi
    :color-scheme
    {;; syntax elements
-    :delimiter [:bold :white]
+    :delimiter [:white]
     :tag       [:red]
 
     ;; primitive values
-    :nil       [:bold :cyan]
+    :nil       [:cyan]
     :boolean   [:cyan]
     :number    [:yellow]
-    :string    [:bold :yellow]
-    :character [:bold :magenta]
-    :keyword   [:bold :magenta]
+    :string    [:yellow]
+    :character [:magenta]
+    :keyword   [:magenta]
     :symbol    nil
 
     ;; special types
-    :function-symbol [:bold :cyan]
+    :function-symbol [:cyan]
     :class-delimiter [:cyan]
-    :class-name      [:bold :cyan]}})
+    :class-name      [:cyan]}})
 
 (defn merge-options
   "Merges maps of printer options, taking care to combine the color scheme

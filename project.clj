@@ -1,4 +1,4 @@
-(defproject org.clojars.mathiashh/puget-neri "1.3.2"
+(defproject org.clojars.mathiashh/puget-neri "1.3.3"
   :description "Colorizing canonical Clojure printer for EDN values with Neri theme."
   :url "https://github.com/mathiashh/puget-neri"
   :license {:name "Public Domain"
